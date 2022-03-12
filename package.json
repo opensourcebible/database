@@ -3,10 +3,10 @@
   "description": "Database for Bible FOSS",
   "author": "Open Source Bible Developers",
   "version": "1.0.0",
-  "license": "GPLV3",
+  "license": "GPL-3.0",
   "scripts": {
     "lint": "eslint . --ext .ts --config .eslintrc.json",
-    "job": "ts-node -r tsconfig-paths/register -r dotenv/config src/index.ts"
+    "execute": "ts-node -r tsconfig-paths/register src/index.ts"
   },
   "engineStrict": true,
   "engines": {
@@ -46,7 +46,7 @@
   },
   "files": [],
   "oclif": {
-    "bin": "yarn exec",
+    "bin": "yarn execute",
     "commands": "./src/commands",
     "plugins": [
       "@oclif/plugin-help"
