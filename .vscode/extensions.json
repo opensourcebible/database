@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "jasonlhy.hungry-delete",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "foxundermoon.shell-format",
+    "visualstudioexptteam.vscodeintellicode",
+    "rokoroku.vscode-theme-darcula",
+    "eamodio.gitlens",
+    "ecmel.vscode-html-css",
+    "yzhang.markdown-all-in-one",
+    "PKief.material-icon-theme",
+    "eg2.vscode-npm-script",
+    "wayou.vscode-todo-highlight",
+    "Gruntfuggly.todo-tree",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ]
+}
