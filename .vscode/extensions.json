@@ -1,20 +1,22 @@
 {
   "recommendations": [
-    "editorconfig.editorconfig",
-    "dbaeumer.vscode-eslint",
-    "jasonlhy.hungry-delete",
-    "christian-kohler.npm-intellisense",
-    "christian-kohler.path-intellisense",
-    "foxundermoon.shell-format",
-    "visualstudioexptteam.vscodeintellicode",
+    "bungcip.better-toml",
     "rokoroku.vscode-theme-darcula",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
     "eamodio.gitlens",
-    "ecmel.vscode-html-css",
+    "jasonlhy.hungry-delete",
+    "VisualStudioExptTeam.vscodeintellicode",
     "yzhang.markdown-all-in-one",
     "PKief.material-icon-theme",
-    "eg2.vscode-npm-script",
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "KevinRose.vsc-python-indent",
+    "foxundermoon.shell-format",
     "wayou.vscode-todo-highlight",
-    "Gruntfuggly.todo-tree",
-    "VisualStudioExptTeam.vscodeintellicode"
+    "Gruntfuggly.todo-tree"
+  ],
+  "unwantedRecommendations": [
+    "TabNine.tabnine-vscode",
   ]
 }

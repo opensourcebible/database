@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "thebible-db"
+version = "0.1.0"
+description = "Database of the Core Versions for The Bible App"
+authors = ["The Bible Developers"]
+license = "GPLv3"
+packages = [
+    { include = "src" },
+    { include = "src/**/*.py" },
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+command = "src.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tomli = "^2.0.1"
+typer = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+mypy = "^0.950"
+bandit = "^1.7.4"
+pydocstyle = "^6.1.1"
+flakeheaven = "^0.11.1"
+
+[tool.black]
+experimental-string-processing = true
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | \.mypy_cache
+  | \.vscode
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 120
+force_sort_within_sections = true
+order_by_type = true
+skip = [".git", ".venv", ".mypy_cache", ".vscode"]
+
+[tool.flakeheaven]
+base = "https://raw.githubusercontent.com/flakeheaven/flakeheaven/master/pyproject.toml"
+format = "grouped"
+max_line_length = 120
+max_complexity = 25
+ignore = "D100,E402,E501"
+
+[tool.pydocstyle]
+match = '.*\.py'
+ignore = "D100,D103,D104"
