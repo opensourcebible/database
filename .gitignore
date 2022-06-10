@@ -17,6 +17,9 @@ yarn-error.log*
 *.njsproj
 *.sln
 
-# virtualenvs
+# Virtualenvs
 /venv
 /.venv
+
+# Custom
+build
