@@ -19,7 +19,7 @@
 
   "explorer.compactFolders": false,
   "explorer.openEditors.visible": 0,
-  "explorer.autoReveal": "focusNoScroll",
+  "explorer.autoReveal": false,
   "explorer.incrementalNaming": "smart",
 
   "editor.suggestSelection": "recentlyUsedByPrefix",
@@ -74,11 +74,14 @@
   ],
 
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "flake8heavened",
+  "python.linting.flake8Path": "flakeheaven",
   "python.linting.flake8CategorySeverity.E": "Warning",
   "python.linting.flake8CategorySeverity.F": "Warning",
   "python.linting.flake8CategorySeverity.W": "Warning",
-  "python.linting.flake8Args": [],
+  "python.linting.flake8Args": [
+    "lint",
+    "-"
+  ],
 
   "python.linting.banditEnabled": true,
   "python.linting.banditPath": "bandit",
