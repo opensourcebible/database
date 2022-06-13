@@ -23,4 +23,4 @@ def execute():
         slug = category["slug"]
         filesystem.directory("/pt-br/protestant/" + slug)
 
-    return category
+    return categories
