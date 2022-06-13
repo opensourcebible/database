@@ -44,4 +44,10 @@ def main():
             for category in categories:
                 slug_category = category["slug"]
 
-                bible_module = importlib.import_module("src.data.%s.%s.%s.bibles" % (code, slug_version, slug_category))
+                if slug_category == "bible":
+
+                    # Execute Bible Commands for Each Category
+                    bible_module = importlib.import_module(
+                        "src.data.%s.%s.%s.bibles" % (code, slug_version, slug_category)
+                    )
+                    bibles = bible_module.execute()
