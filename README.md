@@ -12,7 +12,7 @@ python --version
 ```
 
 ## Instalar Visual Studio Code
-Acesse o [site do Visual Studio Code](https://code.visualstudio.com/) e siga as orientações de instalação para o seu sistema operaciona.
+Acesse o [site do Visual Studio Code](https://code.visualstudio.com/) e siga as orientações de instalação para o seu sistema operacional.
 
 OBS: Caso utilize um sistema operacional Linux faça uso do VSCode nativo e evite usar Snap, Flatpak, por questão de compatibilidade.
 
