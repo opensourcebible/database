@@ -17,19 +17,20 @@ def main():
 
     try:
         for lang_filename in os.listdir(lang_dir):
-            with open(os.path.join(lang_dir, lang_filename), "r") as lang_file:
-                lang = tomli.loads(lang_file.read()).get("lang")
-                langs.append(
-                    {
-                        "code": lang["code"],
-                        "name": lang["name"],
-                        "religions": {
-                            "url": config.base_url + "/" + lang["code"] + "/religions.json",
-                        },
-                    }
-                )
+            if os.path.isfile(lang_filename):
+                with open(os.path.join(lang_dir, lang_filename), "r") as lang_file:
+                    lang = tomli.loads(lang_file.read()).get("lang")
+                    langs.append(
+                        {
+                            "code": lang["code"],
+                            "name": lang["name"],
+                            "religions": {
+                                "url": config.base_url + "/" + lang["code"] + "/religions.json",
+                            },
+                        }
+                    )
 
-                filesystem.directory(lang["code"])
+                    filesystem.directory(lang["code"])
 
         # Sort
         langs.sort(key=lambda obj: obj["code"])
